@@ -9,4 +9,6 @@ class User < ApplicationRecord
   validates :email, presence: true, length: { maximum: 255 }, #長さの検証
                     format: { with: VALID_EMAIL_REGEX },      #フォーマットの検証
                     uniqueness: true                          #一意性の検証
+  has_secure_password
+  validates :password,presence: true, length: { minimum: 6 }
 end
