@@ -31,10 +31,11 @@ group :test do
   gem "minitest-reporters",       "1.5.0"
   gem "guard",                    "2.18.0"
   gem "guard-minitest",           "2.4.6"
+  gem "sqlite3", "1.4.2"
 end
 
 group :production do
-  gem "pg", "1.3.5"
+  gem "sqlite3", "1.4.2"
 end
 
 # Windows ではタイムゾーン情報用の tzinfo-data gem を含める必要があります
