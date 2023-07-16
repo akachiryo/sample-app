@@ -31,12 +31,12 @@ group :test do
   gem "minitest-reporters",       "1.5.0"
   gem "guard",                    "2.18.0"
   gem "guard-minitest",           "2.4.6"
-  gem "sqlite3", "1.4.2"
+  gem "sqlite3", "1.4.2"  #productionのところと一緒に追加している
 end
 
 group :production do
-  #gem "pg", "1.3.5"
-  gem "sqlite3", "1.4.2"
+  #gem "pg", "1.3.5"　（本来の設定）
+  gem "sqlite3", "1.4.2"  #（6章render_build.shを追加後デプロイ時にコネクションエラーになるため）
 end
 
 gem "net-http"

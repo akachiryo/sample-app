@@ -23,3 +23,8 @@ test:
 production:
   <<: *default
   database: db/production.sqlite3
+#production: (本来7章の最終の時点)
+#<<: *default
+#adapter: postgresql
+#encoding: unicode
+#url: <%= ENV['DATABASE_URL'] %>
