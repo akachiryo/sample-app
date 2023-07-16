@@ -35,7 +35,8 @@ group :test do
 end
 
 group :production do
-  gem "pg", "1.3.5"
+  #gem "pg", "1.3.5"
+  gem "sqlite3", "1.4.2"
 end
 
 gem "net-http"
