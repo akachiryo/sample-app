@@ -35,5 +35,5 @@ group :production do
   gem "pg", "1.3.5"
 end
 
-# Windows ではタイムゾーン情報用の tzinfo-data gem を含める必要があります
-# gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem "net-http"
+# ↑ warning: already initialized constant Net::ProtocRetryErrorの表示がターミナルに表示される対処
